@@ -9,7 +9,7 @@ KAppAdmin.controller('AdminController',  ['$scope', '$http', '$window','AdminSer
 }]);
 
 
-KAppAdmin.controller('EmailController',  ['$scope', '$http', '$window','AdminService', '$mdDialog',function($scope, $http, $window, AdminService, $mdDialog) {
+KAppAdmin.controller('EmailController',  ['$scope', '$http', '$window','AdminService', function($scope, $http, $window, AdminService) {
   'use strict';
 
   $scope.selected = [];
@@ -57,46 +57,46 @@ $scope.changeStatus = function(id){
   console.log("Changing status of contact with id: ", id);
 };
 
-$scope.deleteContact = function(id) {
-    var confirm = $mdDialog.confirm()
-          .title('Are you sure you want to delete this contact?')
-          .ok('Yes')
-          .cancel('No');
-    $mdDialog.show(confirm).then(function() {
-      console.log("Yes");
-      AdminService.deleteTheContact(id);
-      $scope.getContacts();
-    }, function() {
-      console.log("No");
-    });
-  };
+// $scope.deleteContact = function(id) {
+//     var confirm = $mdDialog.confirm()
+//           .title('Are you sure you want to delete this contact?')
+//           .ok('Yes')
+//           .cancel('No');
+//     $mdDialog.show(confirm).then(function() {
+//       console.log("Yes");
+//       AdminService.deleteTheContact(id);
+//       $scope.getContacts();
+//     }, function() {
+//       console.log("No");
+//     });
+//   };
 
-$scope.changeStatus = function(id) {
-    var confirm = $mdDialog.confirm()
-          .title('Are you sure you want to mark contact as "Contacted"?')
-          .ok('Yes')
-          .cancel('No');
-    $mdDialog.show(confirm).then(function() {
-      console.log("Yes");
-      AdminService.updateTheContact(id);
-      $scope.getContacts();
-    }, function() {
-      console.log("No");
-    });
-  };
-  $scope.changeStatusBack = function(id) {
-      var confirm = $mdDialog.confirm()
-            .title('Are you sure you want to mark contact as "Not Contacted"?')
-            .ok('Yes')
-            .cancel('No');
-      $mdDialog.show(confirm).then(function() {
-        console.log("Yes");
-        AdminService.updateTheContactBack(id);
-        $scope.getContacts();
-      }, function() {
-        console.log("No");
-      });
-    };
+// $scope.changeStatus = function(id) {
+//     var confirm = $mdDialog.confirm()
+//           .title('Are you sure you want to mark contact as "Contacted"?')
+//           .ok('Yes')
+//           .cancel('No');
+//     $mdDialog.show(confirm).then(function() {
+//       console.log("Yes");
+//       AdminService.updateTheContact(id);
+//       $scope.getContacts();
+//     }, function() {
+//       console.log("No");
+//     });
+//   };
+//   $scope.changeStatusBack = function(id) {
+//       var confirm = $mdDialog.confirm()
+//             .title('Are you sure you want to mark contact as "Not Contacted"?')
+//             .ok('Yes')
+//             .cancel('No');
+//       $mdDialog.show(confirm).then(function() {
+//         console.log("Yes");
+//         AdminService.updateTheContactBack(id);
+//         $scope.getContacts();
+//       }, function() {
+//         console.log("No");
+//       });
+//     };
 
 
 }]);
