@@ -1,4 +1,4 @@
-chickAppRegistration.factory('RegisterFactory', ['$http', function($http){
+KAppRegistration.factory('RegisterFactory', ['$http', function($http){
 
   var data = {};
 

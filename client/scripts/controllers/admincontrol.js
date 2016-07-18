@@ -1,4 +1,4 @@
-chickAppAdmin.controller('AdminController',  ['$scope', '$http', '$window','AdminService',function($scope, $http, $window, AdminService) {
+KAppAdmin.controller('AdminController',  ['$scope', '$http', '$window','AdminService',function($scope, $http, $window, AdminService) {
   $scope.toEmailList = function(){
     $window.location.href = '#emailList';
   };
@@ -9,7 +9,7 @@ chickAppAdmin.controller('AdminController',  ['$scope', '$http', '$window','Admi
 }]);
 
 
-chickAppAdmin.controller('EmailController',  ['$scope', '$http', '$window','AdminService', '$mdDialog',function($scope, $http, $window, AdminService, $mdDialog) {
+KAppAdmin.controller('EmailController',  ['$scope', '$http', '$window','AdminService', '$mdDialog',function($scope, $http, $window, AdminService, $mdDialog) {
   'use strict';
 
   $scope.selected = [];
@@ -102,7 +102,7 @@ $scope.changeStatus = function(id) {
 }]);
 
 
-chickAppAdmin.controller('SetVariablesController',  ['$scope', '$http', '$window','AdminService',function($scope, $http, $window, AdminService) {
+KAppAdmin.controller('SetVariablesController',  ['$scope', '$http', '$window','AdminService',function($scope, $http, $window, AdminService) {
   var adminService = AdminService;
 
 $scope.getDefaults = function() {

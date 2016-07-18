@@ -1,12 +1,12 @@
-var chickApp = angular.module("chickApp", ['ngMaterial', 'ngMessages', 'ngRoute', 'googlechart']);
+var KApp = angular.module("KApp", ['ngMaterial', 'ngMessages', 'ngRoute', 'googlechart']);
 
-chickApp.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
+KApp.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
 
 }]);
 
-var chickAppAdmin = angular.module("chickAppAdmin", ['ngMaterial', 'ngMessages', 'ngRoute', 'md.data.table']);
+var KAppAdmin = angular.module("KAppAdmin", ['ngMaterial', 'ngMessages', 'ngRoute', 'md.data.table']);
 
-chickAppAdmin.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
+KAppAdmin.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
     $routeProvider.
         when("/admin", {
             templateUrl: "/views/admin.html",
@@ -25,14 +25,14 @@ chickAppAdmin.config(["$routeProvider", "$locationProvider", function($routeProv
         });
 }]);
 
-var chickAppRegistration = angular.module("chickAppRegistration", ['ngMaterial', 'ngRoute']);
+var KAppRegistration = angular.module("KAppRegistration", ['ngMaterial', 'ngRoute']);
 
-chickAppRegistration.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
+KAppRegistration.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
 
 }]);
 
-var chickAppLogin = angular.module("chickAppLogin", ['ngMaterial', 'ngRoute']);
+var KAppLogin = angular.module("KAppLogin", ['ngMaterial', 'ngRoute']);
 
-chickAppLogin.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
+KAppLogin.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
 
 }]);

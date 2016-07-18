@@ -1,4 +1,4 @@
-chickAppAdmin.factory("AdminService", ["$http", function($http){
+KAppAdmin.factory("AdminService", ["$http", function($http){
     var admin = {};
 
     var alterDefaults = function(object){

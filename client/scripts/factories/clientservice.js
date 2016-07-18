@@ -1,4 +1,4 @@
-chickApp.factory("ClientService", ["$http", function($http){
+KApp.factory("ClientService", ["$http", function($http){
     var client = {};
 
     var alterDefaults = function(object){
