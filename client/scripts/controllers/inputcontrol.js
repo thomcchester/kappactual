@@ -1,10 +1,10 @@
-KApp.controller('InputController',  ['$scope', '$log', '$http', '$window', '$mdSidenav', "$mdDialog", "$mdMedia", 'ClientService',function($scope, $log, $http, $window, $mdSidenav, $mdDialog, $mdMedia, ClientService) {
+KApp.controller('InputController',  ['$scope', '$log', '$http', '$window', 'ClientService',function($scope, $log, $http, $window, ClientService) {
     var clientService = ClientService;
 
 
-    $scope.toggleMenu = function() {
-        $mdSidenav('left').toggle();
-    };
+    // $scope.toggleMenu = function() {
+    //     $mdSidenav('left').toggle();
+    // };
 
     // $scope.submitEmail(contactPackage);
     // $scope.submit.email = "";
