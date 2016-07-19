@@ -1,10 +1,10 @@
-var KApp = angular.module("KApp", ['ngMaterial', 'ngMessages', 'ngRoute', 'googlechart']);
+var KApp = angular.module("KApp", ['ngMessages', 'ngRoute']);
 
 KApp.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
 
 }]);
 
-var KAppAdmin = angular.module("KAppAdmin", ['ngMaterial', 'ngMessages', 'ngRoute', 'md.data.table']);
+var KAppAdmin = angular.module("KAppAdmin", ['ngMessages', 'ngRoute']);
 
 KAppAdmin.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
     $routeProvider.
@@ -25,13 +25,13 @@ KAppAdmin.config(["$routeProvider", "$locationProvider", function($routeProvider
         });
 }]);
 
-var KAppRegistration = angular.module("KAppRegistration", ['ngMaterial', 'ngRoute']);
+var KAppRegistration = angular.module("KAppRegistration", ['ngRoute']);
 
 KAppRegistration.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
 
 }]);
 
-var KAppLogin = angular.module("KAppLogin", ['ngMaterial', 'ngRoute']);
+var KAppLogin = angular.module("KAppLogin", ['ngRoute']);
 
 KAppLogin.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
 
