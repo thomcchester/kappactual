@@ -2,10 +2,6 @@ KApp.controller('InputController',  ['$scope', '$log', '$http', '$window', 'Clie
     var clientService = ClientService;
 
 
-    $scope.toggleMenu = function() {
-        $mdSidenav('left').toggle();
-    };
-
     // $scope.submitEmail(contactPackage);
     // $scope.submit.email = "";
     // $scope.fade = "";
